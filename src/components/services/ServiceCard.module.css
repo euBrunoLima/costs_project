@@ -1,0 +1,111 @@
+.service_container{
+    width: 90%;
+}
+
+.service_card_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.service_card {
+    flex-basis: 300px;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    
+}
+
+.service_card_container > .service_card  h4{
+    text-align: start;
+}
+
+.service_card_container  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 5px;
+    position: relative;
+    bottom: 10;
+}
+.service_card_actions{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service_card_actions button{
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
+    color: #222;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    height: 42.2px;
+}
+
+.service_card_actions button svg{
+    margin-right: 0.5em;
+}
+
+.service_card_actions >  button:hover{
+    background-color: #ffbb33;
+}
+
+.service_card_actions >  button:hover > svg{
+    color: #222;
+    font-weight: 600;
+}
+
+.modal_overlay{
+    position: fixed;
+    inset: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+    padding: 0 1rem;
+}
+
+.form_service_container{
+    width: 500px;
+    min-height: 300px;
+    background-color: #efefef;
+    padding: 2rem 1.8rem 1.5rem 1.8rem;
+    position: relative;
+}
+
+.form_service_container > h1{
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.form_service_container > button{
+    position: absolute;
+    right: 1.8rem;
+    top: 2.6rem;
+    
+}
+
+.form_service_container form{
+    margin-top: 30px;
+}
+.form_service_container form textarea{
+    height: 80px;
+}
+.form_service_container form button{
+    padding:  0.5rem ;
+}
+
+

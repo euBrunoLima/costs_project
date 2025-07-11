@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# 💰 Costs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Costs é uma aplicação web desenvolvida com React para o gerenciamento de projetos e seus respectivos serviços. A plataforma permite criar e editar projetos, adicionar serviços, controlar o orçamento e visualizar detalhes de cada projeto de forma simples e eficiente.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Cadastro de projetos com nome, orçamento e categoria
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+➕ Adição, edição e remoção de serviços em cada projeto
 
-### `npm test`
+💸 Controle do orçamento total e dos custos individuais dos serviços
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📢 Exibição de mensagens de feedback para ações do usuário
 
-### `npm run build`
+📱 Interface responsiva, moderna e intuitiva
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📄 Páginas de contato e informações sobre a empresa
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Estrutura de Pastas
 
-### `npm run eject`
+```
+src/
+  App.jsx
+  index.js
+  index.css
+  components/
+    layout/
+      NavBar.jsx
+      Footer.jsx
+      Container.jsx
+      Message.jsx
+      Loading.jsx
+      LinkButton.jsx
+    pages/
+      Home.jsx
+      Projects.jsx
+      Project.jsx
+      NewProject.jsx
+      Contact.jsx
+      Comapany.jsx
+    projects/
+      ProjectCard.jsx
+      ProjectForm.jsx
+    services/
+      ServiceCard.jsx
+      ServiceForm.jsx
+    form/
+      Input.jsx
+      Select.jsx
+      SubmitButton.jsx
+      TextArea.jsx
+  img/
+    ...
+public/
+  index.html
+db.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Scripts Disponíveis
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` — Inicia o app em modo desenvolvimento ([http://localhost:3000](http://localhost:3000))
+- `npm run build` — Gera o build de produção na pasta `build`
+- `npm test` — Executa os testes
+- `npm run backend` — Inicia o backend fake com JSON Server ([http://localhost:5000](http://localhost:5000))
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Backend Fake
 
-## Learn More
+O projeto utiliza o [JSON Server](https://github.com/typicode/json-server) para simular uma API REST. Os dados estão em [`db.json`](db.json).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para iniciar o backend:
+```sh
+npm run backend
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶️ Como Rodar o Projeto
 
-### Code Splitting
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Inicie o backend fake:
+   ```sh
+   npm run backend
+   ```
+3. Inicie o frontend:
+   ```sh
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Tecnologias Utilizadas
 
-### Analyzing the Bundle Size
+- React
+- React Router DOM
+- React Icons
+- JSON Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 Licença
 
-### Making a Progressive Web App
+Este projeto está licenciado sob a licença [MIT](https://opensource.org/licenses/MIT).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ✏️ Customizações e Melhorias Pessoais
 
-### Advanced Configuration
+Este projeto foi originalmente desenvolvido durante o curso do professor Matheus Battisti, do canal Hora de Codar, como base para estudos em React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Após a conclusão do conteúdo principal, realizei diversas melhorias e extensões por conta própria, incluindo:
 
-### Deployment
+✅ Continuação e finalização das páginas Contact e Company
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🔧 Criação de uma nova rota no JSON Server para armazenar os dados do formulário da página de contato
 
-### `npm run build` fails to minify
+🧩 Desenvolvimento de novos componentes e atualização dos componentes existentes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✏️ Adição da funcionalidade de edição de serviços, com suporte a modal personalizado
+
+📱 Implementação de responsividade completa, garantindo que o site funcione bem em mobile e desktop
+
+Essas customizações foram feitas com foco em praticar conceitos avançados de React, componentização, organização de código e integração com API fake.

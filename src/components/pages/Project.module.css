@@ -1,0 +1,83 @@
+.project_details{
+    padding: 2em;
+
+}
+.project_details > .container >  div:nth-child(2){
+    margin-bottom: 5em;
+   
+}
+.project_container{
+  width: 100%;
+}
+.project_details h1,
+.project_details h2,
+.project_details p{
+    margin-bottom: 0.5em;
+}
+
+.project_details h1{
+    color: #ffbb33;
+    background-color: #222;
+    padding: 0.4em;
+    
+}
+.project_details span{
+    font-weight: bold;
+}
+.details_container,
+.service_form_container{
+    border-bottom: 1px solid #7a7a7a;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.btn{
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
+    height: 45px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 2em;
+}
+
+.btn:hover{
+    color: #ffbb33;
+    
+}
+.project_form{
+    width: 50%;
+
+}
+.details_container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.details_container_header h1,
+.details_container_header h2,
+.details_container_header button{
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 650px) {
+    .details_container_header{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+}

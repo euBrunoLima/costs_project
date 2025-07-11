@@ -1,0 +1,29 @@
+.form_control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_control label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.form_control textarea{
+    padding: .7em;
+    border-radius: 0;
+    border: none;
+}
+
+.form_control textarea::placeholder{
+    color: #7b7b7b;
+}
+
+.form_control textarea {
+    padding: .7em;
+    border-radius: 0;
+    border: none;
+    max-width: 100%;   /* largura */
+    height: 120px;  /* altura */
+    resize: none;   /* impede redimensionamento pelo usuário */
+}
