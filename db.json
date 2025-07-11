@@ -44,15 +44,8 @@
         "id": "3",
         "name": "Desing"
       },
-      "cost": 500.8,
-      "services": [
-        {
-          "name": "Refatoração",
-          "cost": 500.8,
-          "description": "Refatoração do site",
-          "id": "354d4367-7cfd-4058-97f5-5bef3a239d75"
-        }
-      ]
+      "cost": 0,
+      "services": []
     },
     {
       "id": "d4e5",
@@ -62,7 +55,7 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": "3300",
+      "cost": 3400,
       "services": [
         {
           "name": "Consultoria",
@@ -72,7 +65,7 @@
         },
         {
           "name": "Documentação",
-          "cost": "300",
+          "cost": 400,
           "description": "Documentação técnica",
           "id": "srv-008"
         }
