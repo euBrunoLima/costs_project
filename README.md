@@ -134,7 +134,7 @@ Após a conclusão do conteúdo principal, realizei diversas melhorias e extens�
 Essas customizações foram feitas com foco em praticar conceitos avançados de React, componentização, organização de código e integração com API fake.
 
 
-## Links Úteis
+## Links úteis
 <ul>
   <li><a href="https://horadecodar.com.br/" target="_blank">site - hora de codar</a></li>
   <li><a href="https://www.youtube.com/@MatheusBattisti" target="_blank">canal - hora de codar</a></li>
